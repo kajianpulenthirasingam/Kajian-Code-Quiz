@@ -5,15 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
-    <title>Kajian Code Quiz</title>
+    <title>Code Quiz</title>
   </head>
   <body>
     <div class="scores">
-    <h1 style="color: blueviolet;">View Highscores</h1>
+      <h1 style="color: blueviolet;">View Highscores</h1>
+      <div id="highscores"></div>
     </div>
-    <h2>Timer :<span id="time"></span> </h2>
-    <button id="starter">Start</button>
-    
-    <script src="script.js"</script>
+    <h2>Timer: <span id="time"></span></h2>
+    <div id="quiz-container">
+      <h3 id="question"></h3>
+      <ul id="choices"></ul>
+    </div>
+    <div id="score-container">
+      <h3>Your score: <span id="score"></span></h3>
+      <form>
+        <label for="initials">Enter your initials:</label>
+        <input type="text" id="initials" name="initials" />
+        <input type="submit" value="Save" />
+      </form>
+    </div>
+    <button id="start-button">Start</button>
+    <script src="script.js"></script>
   </body>
 </html>
