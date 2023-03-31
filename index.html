@@ -13,45 +13,24 @@
       <div id="highscores"></div>
     </div>
     <h2>Timer: <span id="time"></span></h2>
-    <div id="quiz-container">
+    <div id="quiz-container" style="display: none">
       <h3 id="question"></h3>
-      <ul id="choices"></ul>
+      <div id="choices">
+        <button class="choice" data-index="0"></button>
+        <button class="choice" data-index="1"></button>
+        <button class="choice" data-index="2"></button>
+        <button class="choice" data-index="3"></button>
+      </div>
     </div>
-    <div id="score-container">
+    <div id="score-container" style="display: none">
       <h3>Your score: <span id="score"></span></h3>
       <form>
-        <label for="name">Enter your Name:</label>
+        <label for="name">Enter your Initials:</label>
         <input type="text" id="initials" name="initials" />
         <input type="submit" value="Save" />
       </form>
     </div>
     <button id="start-button">Start</button>
     <script src="script.js"></script>
-    <div>
-      <h3>Question 1</h3>
-      <p>Arrays in JavaScript is used to store?</p>
-      <button class="choice" data-correct="false">Number </button>
-      <button class="choice" data-correct="false">String</button>
-      <button class="choice" data-correct="false">Boolean</button>
-      <button class="choice" data-correct="true">All of the above</button>
-    </div>
-    
-    <div style="display:none;">
-      <h3>Question 2</h3>
-      <p>Commonly used Data types DO NOT INCLUDE?</p>
-      <button class="choice" data-correct="false">String</button>
-      <button class="choice" data-correct="false">Boolean</button>
-      <button class="choice" data-correct="true">Alerts</button>
-      <button class="choice" data-correct="false">Numbers</button>
-    </div>
-
-    <div style="display:none;">
-      <h3>Question 3</h3>
-      <p>The condition in an if / else statement is enclosed within ___?</p>
-      <button class="choice" data-correct="false">Quotes</button>
-      <button class="choice" data-correct="false">Curly Brackets</button>
-      <button class="choice" data-correct="true">Parentheses</button>
-      <button class="choice" data-correct="false">Square Brackets</button>
-    </div>
   </body>
 </html>
